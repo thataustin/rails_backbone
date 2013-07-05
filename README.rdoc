@@ -1,0 +1,13 @@
+== Basic Rails/Backbone.js App
+
+Hey there, I'm posting this simple little app as reference for anyone learning Rails/Backbone, as I am.
+
+
+Notable tidbits:
+
+1. It took me about 3 days to throw this together as I was learning both Rails and Backbone
+2. You should be able to git clone this repo, `bundle install`, and then `rails server` to see what the app does
+3. I'm using the HTML5 editablecontent div/span attribute to allow for in-place text editing, so if your browser doesn't support HTML5, it won't work
+4. The backend is built on the http://guides.rubyonrails.org/getting_started.html tutorial
+5. You can go to http://localhost:3000/posts (and other posts-related resource URLs) to experience a non-Backbone version of the site
+6. I've turned off the csrf protection so that the AJAX PUT/POST calls will work without Rails denying the requests

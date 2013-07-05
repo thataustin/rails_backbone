@@ -1,0 +1,35 @@
+  <div id="postapp">
+
+    <header>
+      <h1><%= link_to "Posts", posts_path %></h1>
+      <div class="error" style="display:none"></div>
+      <div class="success" style="display:none"></div>
+      <input id="new-name" type="text" placeholder="Name">
+      <input id="new-title" type="text" placeholder="Title">
+      <input id="new-content" type="text" placeholder="Content">
+      <div id="instructions">Hit enter on the content field to save a post</div>
+    </header>
+
+    <section id="main">
+      <div id="post-list"></div>
+    </section>
+
+  </div>
+
+  <!-- Templates -->
+
+  <script type="text/template" id="post-template">
+    <hr />
+    <div class="view">
+      <div style="font:italic bold 22px/30px Georgia, serif">
+        <span class="title" contenteditable="false"><%%- title %></span>
+      </div>
+      <div contenteditable="false" class="content">
+        <%%- content %>
+      </div>
+      <div style="font:italic 12px/30px Georgia, serif">
+        - <span contenteditable="false" class="name"><%%- name %></span>
+      </div>
+      <button class="destroy">Remove Post</button>
+    </div>
+  </script>

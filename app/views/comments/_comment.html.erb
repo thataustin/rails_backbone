@@ -1,0 +1,10 @@
+<br />
+<br />
+<%= comment.body %>
+<br />
+<i> - <%= comment.commenter %> - </i>
+<%= link_to 'X',
+    [comment.post, comment],
+    method: :delete,
+    data: {confirm: 'Are you sure you want to remove this comment?'}
+%>
