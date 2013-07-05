@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Rails backbone : A basic Rails exercise that improves upon the getting_started tutorial by adding Backbone to the homepage" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Rails backbone</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/thataustin/rails_backbone">View on GitHub</a>
+
+          <h1 id="project_title">Rails backbone</h1>
+          <h2 id="project_tagline">A basic Rails exercise that improves upon the getting_started tutorial by adding Backbone to the homepage</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/thataustin/rails_backbone/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/thataustin/rails_backbone/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>== Basic Rails/Backbone.js App</p>
+
+<p>Hey there, I'm posting this simple little app as reference for anyone learning Rails/Backbone, as I am.</p>
+
+<p>Here are some things to be aware of if you're going to look at this code:</p>
+
+<ol>
+<li>After git clone'ing this repo, do the following to get the site running locally at http://localhost:3000</li>
+</ol><pre><code>bundle install
+rake db:migrate
+rails server
+</code></pre>
+
+<ol>
+<li>I'm using the HTML5 editablecontent div/span attribute to allow for in-place text editing, so if your browser doesn't support HTML5, it won't work</li>
+<li>I used <a href="http://guides.rubyonrails.org/getting_started.html">this tutorial</a> to build the backend</li>
+<li>You can go to http://localhost:3000/posts (and other posts-related resource URLs) to experience a non-Backbone version of the site</li>
+<li>I've turned off the csrf protection so that the AJAX PUT/POST calls will work without Rails denying the requests</li>
+</ol>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Rails backbone maintained by <a href="https://github.com/thataustin">thataustin</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
