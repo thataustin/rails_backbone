@@ -5,12 +5,9 @@ Hey there, I'm posting this simple little app as reference for anyone learning R
 Here are some things to be aware of if you're going to look at this code:
 
 1. After git clone'ing this repo, do the following to get the site running locally at http://localhost:3000
-
-```shell
-bundle install
-rake db:migrate
-rails server
-```
+    * bundle install
+    * rake db:migrate
+    * rails server
 2. I'm using the HTML5 editablecontent div/span attribute to allow for in-place text editing, so if your browser doesn't support HTML5, it won't work
 3. The backend is built on the http://guides.rubyonrails.org/getting_started.html tutorial
 4. You can go to http://localhost:3000/posts (and other posts-related resource URLs) to experience a non-Backbone version of the site
